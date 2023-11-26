@@ -1,0 +1,70 @@
+
+@import url("styleHeaderFooter.css");
+
+
+  section{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    /* height: 100vh; */
+    /* flex-direction: column; */
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 4em;
+  }
+  
+  .btn{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+  }
+
+  button{
+    margin-top: 4rem;
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  img{
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  #description{
+    background-image:url("../img/escenario.avif");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    background-size: 100%;
+    text-align: center;
+
+}
+body{
+  background-color: blue;
+  /* overflow: hidden */
+}
+.menuNav{
+  position: fixed;
+}
+.container{
+  height: 100vh;
+}
+#piano{
+  background-color: blueviolet;
+}
+#guitarra{
+  background-color: green;
+}
+@media (max-width: 800px){
+  body{
+    background-color: red;
+  }
+  #description{
+    background-image:url("../img/escenario.avif");
+    background-repeat: repeat;
+    display: flex;
+    justify-content:center;
+    background-size: 100%;
+    text-align: center;
+
+  }
+
+}

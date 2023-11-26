@@ -1,0 +1,51 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+}
+.menuNav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    background-color: rgb(14, 10, 11);
+    padding: 2rem;
+    top: 0;
+    background: linear-gradient(to right, transparent, #fff, transparent); 
+    border: linear-gradient(to right, transparent, #fff, transparent) ;
+    /* position: -webkit-sticky; */
+}
+.ulHeader{
+    display: flex;
+    flex-direction: row;
+
+}
+.ulHeader li{
+    /* margin-right: 3rem;
+    margin-left: .5rem; */
+    list-style: none;
+}
+.redesSociales{
+    background-color: rgb(11, 10, 14);
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+    display: flex;
+    justify-content: center;
+
+}
+.redesSociales a{
+    margin: 1rem;
+
+}
+.InstrumentIcon a{
+    margin-right: .5rem;
+}
+.InstrumentIcon :first-child{
+    margin-right: .5rem; 
+}
