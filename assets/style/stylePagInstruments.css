@@ -23,7 +23,10 @@ img{
 }
 .instrument{
     margin:2rem;
-    border:1px solid red;
+    color: white;
+    background-color: black;
+    border-radius: 3rem;
+
 }
 @media (max-width: 800px){
     img{

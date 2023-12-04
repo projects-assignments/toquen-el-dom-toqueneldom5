@@ -1,57 +1,54 @@
-* {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-header {
+header{
     width: 100%;
 }
-
-nav {
+.menuNav{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-between;
     /* position: sticky; */
+    z-index: 100;
     background-color: rgb(14, 10, 11);
     padding: 2rem;
-    background: linear-gradient(to right, transparent, #fff, transparent);
-    border: linear-gradient(to right, transparent, #fff, transparent);
+    top: 0;
+    /* background: linear-gradient(to right, transparent, #06271d, transparent); 
+    border: linear-gradient(to right, transparent, #555c5a, transparent) ; */
     /* position: -webkit-sticky; */
 }
-
-ul {
+.ulHeader{
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
+    flex-direction: row;
 
-li {
+}
+.ulHeader li{
+    /* margin-right: 3rem;
+    margin-left: .5rem; */
     list-style: none;
 }
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-footer {
+.redesSociales{
     background-color: rgb(11, 10, 14);
     padding-bottom: 1rem;
     padding-top: .5rem;
     display: flex;
     justify-content: center;
-}
 
-.redesSociales a {
+}
+.redesSociales a{
     margin: 1rem;
 
 }
-
-.InstrumentIcon a {
+.InstrumentIcon a{
     margin-right: .5rem;
 }
-
-.InstrumentIcon :first-child {
-    margin-right: .5rem;
+.InstrumentIcon :first-child{
+    margin-right: .5rem; 
 }
+a {
+    text-decoration: none;
+  }

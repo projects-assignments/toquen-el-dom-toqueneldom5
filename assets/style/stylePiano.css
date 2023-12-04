@@ -2,19 +2,22 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #2887e3;
+background-color: #D9D9D9;
 
 }
+
 .piano-container {
   display: flex;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  
   padding: 4em 1em 1em 1em;
   border-radius: 0.62em;
   background-color: #24272e;
+  background: linear-gradient(to right, transparent, #000000, transparent); 
+  border: linear-gradient(to right, transparent, #000000, transparent) ;
+  border: #070a0f 1px solid;
   box-shadow: 0 2em 4em rgba(7, 0, 53, 0.25);
 }
 .white-key {
@@ -25,9 +28,27 @@ body {
   border: 2px solid #24272e;
   box-sizing: border-box;
   cursor: pointer;
+  
 }
-.white-key:hover {
-  background-color: #ebebeb;
+.white-key:active {
+  background-color: #504141;
+}
+.white-key:enabled{
+  background-color: #504141;
+}
+h1{
+  margin-top: 4rem;
+}
+div,h1 {
+  user-select: none;
+}
+h1{
+  font-size: xx-large;
+}
+.verNotas{
+  position: absolute;
+  left: 0;
+  font-size: xx-large;
 }
 .black-key {
   width: 2.5em;
@@ -38,8 +59,8 @@ body {
   background-color: #070a0f;
   cursor: pointer;
 }
-.black-key:hover {
-  background-color: #24272e;
+.black-key:active {
+  background-color: #342929;
 }
 .black-key:nth-child(1) {
   left: 4em;
@@ -76,7 +97,12 @@ footer{
     bottom: 0;
     width:100%
   }
+.main{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 
+}
 @media screen and (max-width: 1000px) {
   .piano-container {
     font-size: 0.7em;
